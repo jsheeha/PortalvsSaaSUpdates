@@ -128,18 +128,19 @@
                         <div class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl">
                             <h3 class="text-amber-800 font-bold text-lg mb-2">The Integrated Reality</h3>
                             <p class="text-amber-900 text-sm mb-4">
-                                Even when only a SaaS store is being updated, all stores (including ASU's custom stores) must be taken offline. 
+                                Even when only a SaaS store is being updated, all stores (including ASU's custom stores) must be tested and all must be taken offline when deploying to prod. 
                             </p>
-                            <ul class="list-disc pl-5 text-amber-900 space-y-2 text-sm">
-                                <li><strong>Data Integrity:</strong> Prevents users from making changes in one store that cannot properly integrate with others during maintenance.</li>
-                                <li><strong>Validation:</strong> ASU custom stores (Grants, Agreements, Master) require integration testing after SaaS updates to ensure shared info remains accurate.</li>
+                            <ul class="list-disc pl-5 text-amber-900 space-y-2 text-sm">                                
+                                <li><strong>Testing:</strong> ASU custom stores (Grants, Agreements, Master) require integration testing after SaaS updates to ensure shared info continues to work as expected.</li>
+                                <li><strong>Deployment:</strong> Taking all stores offline prevents users from making changes in one store that cannot properly integrate with others during maintenance.</li>
+
                             </ul>
                         </div>
                         
                         <div class="bg-stone-800 text-white p-6 rounded-xl shadow-lg">
                             <h3 class="font-bold text-lg mb-2">Manager’s Takeaway</h3>
                             <p class="text-stone-300 text-sm">
-<strong>SaaS Updates</strong> involve code changes to the SaaS stores. <br><strong>Portal Updates</strong> involve a Portal server update to all stores. <br><strong>Both Update Types</strong> require testing the integrity of the ASU-maintained integrations for all stores and require production downtime for all stores simultaneously.
+<strong>SaaS Updates</strong> involve code changes to the SaaS stores. <br><strong>Portal Updates</strong> involve a Portal server update for all stores. <br><strong>Both Update Types</strong> require testing the integrity of the ASU-maintained integrations for all stores and require production downtime for all stores simultaneously.
                             </p>
                         </div>
                     </div>
